@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <form>
+        <input
+          type="text"
+          class="form-control mb-2"
+          placeholder="Nome"
+          name="nome"
+          [(ngModel)]="formData.nome"
+        />
+        <input
+          type="text"
+          class="form-control mb-2"
+          placeholder="Cognome"
+          name="cognome"
+          [(ngModel)]="formData.cognome"
+        />
+        <input
+          type="email"
+          class="form-control mb-2"
+          placeholder="Email"
+          name="email"
+          [(ngModel)]="formData.email"
+        />
+        <input
+          type="password"
+          class="form-control mb-2"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="formData.password"
+        />
+        <div class="d-flex justify-content-center">
+        <button (click)="register()" class="btn btn-outline-info me-2 text-white">Registrati</button>
+        <button class="btn btn-outline-light" routerLink="/">Indietro</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

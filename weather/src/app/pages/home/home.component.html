@@ -1,0 +1,64 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          name="city"
+          [(ngModel)]="city"
+        />
+        <button
+          class="btn btn-outline-info text-white"
+          type="submit"
+          (click)="searchCity()"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container ">
+  <div class="row justify-content-center">
+    <div class="col-6 border border-2 border-info rounded-3 mt-3">
+      <div class="card-body p-4">
+        <div class="d-flex">
+          <h6 class="flex-grow-1 text-white">{{ data.name }}</h6>
+          <h6 class="text-white">15:07</h6>
+        </div>
+
+        <div class="d-flex flex-column text-center mt-5 mb-4">
+          <h6 class="display-4 mb-0 font-weight-bold text-white" >
+            {{ data.temp }}°C
+          </h6>
+          <span class="small text-white">{{
+            data.description
+          }}</span>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="flex-grow-1" style="font-size: 1rem">
+            <div>
+              <i class="fas fa-wind fa-fw" style="color: #868b94"></i>
+              <span class="ms-1 text-white"> {{ data.wind }}km/h </span>
+            </div>
+            <div>
+              <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+              <span class="ms-1 text-white"> {{ data.humidity }}% </span>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://openweathermap.org/img/wn/{{ data.icon }}@2x.png"
+              width="100px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

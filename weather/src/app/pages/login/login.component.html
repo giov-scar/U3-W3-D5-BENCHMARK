@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <form>
+        <input
+          type="email"
+          class="form-control mb-2"
+          placeholder="Email"
+          name="email"
+          [(ngModel)]="formData.email"
+        />
+        <input
+          type="password"
+          class="form-control mb-2"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="formData.password"
+        />
+        <div class="d-flex justify-content-center">
+        <button (click)="login()" class="btn btn-outline-info me-2 text-white">Accedi</button>
+        <button class="btn btn-outline-light" routerLink="/">Indietro</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

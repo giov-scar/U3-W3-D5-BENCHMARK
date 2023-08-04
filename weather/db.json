@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "gihekocala@mailinator.com",
+      "password": "$2a$10$3XetkAoDzG5WWptBNABFBevQ/9bLC.JDq5hVvEsR.50z7AwPFCf/G",
+      "nome": "Nostrum aliquam anim",
+      "cognome": "Magni unde ex est v",
+      "id": 1
+    },
+    {
+      "email": "jyrinajof@mailinator.com",
+      "password": "$2a$10$2lQzbO6Id4.qKkQP1D.souSy748hHnp00JEKKIoNP4xQ1h4z4Jc..",
+      "nome": "Laboris eum maiores ",
+      "cognome": "Nisi aut error adipi",
+      "id": 2
+    }
+  ]
+}
